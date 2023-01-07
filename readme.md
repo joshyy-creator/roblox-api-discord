@@ -1,12 +1,10 @@
-# easy-roblox-api
-## Extremely easy package to easily fetch data from the Roblox API.
-* Beginner friendly
-* No bugs discovered till date
+# roblox-api-discord
+## Credits to easy-roblox-api for the getGroup and getUser functions.
 
 # Installation
 Install with NPM:
 ```
-$ npm install easy-roblox-api
+$ npm install roblox-api-discord
 ```
 ## Version
 The current version is v2.0.0 - which added the `getGroup()` function. This is the most stable and recommended version.
@@ -15,8 +13,8 @@ The current version is v2.0.0 - which added the `getGroup()` function. This is t
 ## Information about a User
 This will get a lot of data about user:
 ```js
-const roblox = require('easy-roblox-api');
-roblox.getUser("Some rbx username", "username").then(response => {
+const roblox = require('roblox-api-discord');
+roblox.getUser("Roblox Username", "username").then(response => {
 	 console.log(response); 
 }).catch(() => {
 	console.log("An error occured, most likely that user does't exist!");
@@ -52,8 +50,8 @@ This will log something like this:
 ```
 As an alternative, you can get user information using an ID:
 ```js
-const roblox = require('easy-roblox-api');
-roblox.getUser("140445252", "id").then(response => {
+const roblox = require('roblox-api-discord');
+roblox.getUser("Roblox User ID", "id").then(response => {
 	 console.log(response); 
 });
 ```
@@ -62,7 +60,7 @@ If you leave the 2nd parameter of `getUser` empty, it will assume it is an ID.
 ## Information about a Group
 
 ```js
-roblox.getGroup("some group", "name").then(res => {
+roblox.getGroup("Group Name", "name").then(res => {
 		console.log(res);
 }).catch(console.error);
 ```
@@ -90,12 +88,18 @@ This will log something like this:
 	] 
 }
 ```
-
-Just like when getting user data, you can put `id` instead of `name` as parameter 2 when getting group data. ID is the default if none is provided.
-
+```
+As an alternative, you can get user information using an ID:
+```js
+const roblox = require('roblox-api-discord');
+roblox.getGroup("Roblox Group ID", "id").then(response => {
+	 console.log(response); 
+});
+```
+If you leave the 2nd parameter of `getGroup` empty, it will assume it is an ID.
 
 ## Support
-To get support using the package, report bugs, request updates, or any other sort of request, please use our [GitHub issues page](https://github.com/Yankue/easy-roblox-api/issues), where I will gladly help you.
+To get support using the package, report bugs, request updates, or any other sort of request, please use our [GitHub issues page]([https://github.com/Yankue/easy-roblox-api/issues](https://github.com/joshyy-creator/roblox-api-discord/issues)), where I will gladly help you.
 
 ## Documentation
-Documentation will be on the wiki on GitHub, but this is coming soon.
+Documentation is coming soon. For this guide is all
