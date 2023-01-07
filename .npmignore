@@ -1,0 +1,16 @@
+# Packages
+node_modules/
+yarn.lock
+
+# Log files
+logs/
+*.log
+
+# Miscellaneous
+.idea/
+.vs
+.vscode/
+
+# NPM ignore
+.github/
+test/
